@@ -1,0 +1,80 @@
+/******************************************
+*  Author : Angel Maldonado   
+*  Created On : Tue Jun 28 2022
+*  File : styles.css
+*******************************************/
+
+/* █▄▄ █▀█ █▀▀ ▄▀█ █▄▀ █▀█ █▀█ █ █▄░█ ▀█▀ █▀
+   █▄█ █▀▄ ██▄ █▀█ █░█ █▀▀ █▄█ █ █░▀█ ░█░ ▄█*/
+
+/* Enfoque Mobile first, primero chicos y despues grandes */
+/* sm */
+@media (min-width: 576px) {
+    body {
+        background-color: var(--bs-indigo);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    body {
+        background-color: var(--bs-pink);
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+    body {
+        background-color: var(--bs-red);
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    body {
+        background-color: var(--bs-orange);
+    }
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+    body {
+        background-color: var(--bs-yellow);
+    }
+}
+
+/* Enfoque max-width, primero grandes y despues chicos */
+/* xxl */
+/* @media (max-width: 1399.98px) {
+    body {
+        background-color: var(--bs-yellow);
+    }
+} */
+
+/* xl */
+/* @media (max-width: 1199.98px) {
+    body {
+        background-color: var(--bs-orange);
+    }
+} */
+
+/* lg */
+/* @media (max-width: 991.98px) {
+    body {
+        background-color: var(--bs-red);
+    }
+} */
+
+/* md */
+/* @media (max-width: 767.98px) {
+    body {
+        background-color: var(--bs-pink);
+    }
+} */
+
+/* sm */
+/* @media (max-width: 575.98px) {
+    body {
+        background-color: var(--bs-indigo);
+    }
+} */
