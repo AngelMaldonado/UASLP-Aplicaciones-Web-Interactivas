@@ -1,0 +1,28 @@
+/******************************************
+*  Author : Angel Maldonado   
+*  Created On : Tue Jun 28 2022
+*  File : styles.css
+*******************************************/
+
+/* █▀▀ █▀█ █▄░█ ▀█▀ ▄▀█ █ █▄░█ █▀▀ █▀█ █▀
+   █▄▄ █▄█ █░▀█ ░█░ █▀█ █ █░▀█ ██▄ █▀▄ ▄█*/
+
+.container {
+    color: var(--bs-white);
+    background-color: var(--bs-yellow);
+    border: 1px solid var(--bs-black);
+}
+
+.row {
+    background-color: var(--bs-pink);
+    border: 1px solid var(--bs-black);
+}
+
+.row>* {
+    background-color: var(--bs-teal);
+    border: 1px solid var(--bs-black);
+}
+
+div {
+    padding: 0.75rem;
+}
