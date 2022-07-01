@@ -128,6 +128,44 @@
             </div>
         </div>
     </div>
+    <br><br>
+    <h2>Wrapping de columnas</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">.col-9</div>
+            <div class="col-4">.col-4</div>
+            <div class="col-6">.col-6</div>
+        </div>
+    </div>
+    <br><br>
+    <h2>Breaks de columnas</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+            <!-- Force next columns to break to new line -->
+            <div class="w-100">.w-100</div>
+
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>
+    </div>
+    <br><br>
+    <h2>Reordenamiento de columnas</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col order-2">
+                Primero en DOM, .col .order-2
+            </div>
+            <div class="col order-3">
+                Segundo en DOM, .col .order-3
+            </div>
+            <div class="col order-1">
+                Tercero en DOM, .col .order-1
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
