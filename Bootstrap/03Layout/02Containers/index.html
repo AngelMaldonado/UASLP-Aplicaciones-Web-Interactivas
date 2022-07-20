@@ -12,26 +12,57 @@
     <meta name="author" content="Angel Maldonado">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <title>Bootstrap - Containers</title>
+    <title>Bootstrap - 🧩Contenedores</title>
 </head>
 
-<body>
-    <div class="container">.container</div>
-    <div class="container-sm">.container-sm</div>
-    <div class="container-md">.container-md</div>
-    <div class="container-lg">.container-lg</div>
-    <div class="container-xl">.container-xl</div>
-    <div class="container-xxl">.container-xxl</div>
-    <div class="container-fluid">.container-fluid</div>
+<body class="bg-dark text-light">
+    <div class="container my-5 p-5 rounded shadow-lg bg-light bg-opacity-10">
+        <h1>🧩Contenedores</h1>
+        <p class="lead">
+            Los <em>Containers</em> son los elementos más básicos de distribución de contenido en <em>Bootstrap</em>, y
+            son requeridos cuando se utiliza el sistema de cuadriculado de <em>Bootstrap</em>. Son utilizados para
+            contener, dirigir, y (a veces) centrar el contenido. A pesar de que pueden existir contenedores anidados, la
+            mayoría de distribuciones (<em>layouts</em>) no requieren de contenedores anidados.<br>
+            <em>Bootstrap</em> maneja 3 contenedores principales:
+        </p>
+        <ul>
+            <li><code>.container</code>: <code>max-width</code> en cada <em>breakpoint</em></li>
+            <li><code>.container-{breakpoint}</code>: <code>width: 100%</code> hasta el <em>breakpoint</em></li>
+            <li><code>.container-fluid</code>: <code>width: 100%</code> en todos los <em>breakpoints</em></li>
+        </ul>
+    </div>
+    <div class="container-sample container">.container</div>
+    <p class="container"><code>max-width</code> en cada <em>breakpoint</em></p>
+    <div class="container-sample container-sm">.container-sm</div>
+    <p class="container"><code>width: 100%</code> hasta <code>sm</code> (&eqslantgtr;576px)</p>
+    <div class="container-sample container-md">.container-md</div>
+    <p class="container"><code>width: 100%</code> hasta <code>md</code> (&eqslantgtr;768px)</p>
+    <div class="container-sample container-lg">.container-lg</div>
+    <p class="container"><code>width: 100%</code> hasta <code>lg</code> (&eqslantgtr;960px)</p>
+    <div class="container-sample container-xl">.container-xl</div>
+    <p class="container"><code>width: 100%</code> hasta <code>xl</code> (&eqslantgtr;1200px)</p>
+    <div class="container-sample container-xxl">.container-xxl</div>
+    <p class="container"><code>width: 100%</code> hasta <code>xxl</code> (&eqslantgtr;1400px)</p>
+    <div class="container-sample container-fluid">.container-fluid</div>
+    <p class="container"><code>width: 100%</code> en todos los <em>breakpoints</em></p>
+    <div class="container my-5 p-5 rounded shadow-lg bg-light bg-opacity-10">
+        <div class="container text-center mt-5">
+            <div class="btn-group">
+                <a class="btn btn-primary" href="../01Breakpoints/index.html">< 🧩Breakpoints</a>
+                <a class="btn btn-primary active" aria-current="page" href="#">🧩Contenedores</a>
+                <a class="btn btn-primary" href="../03Grid/index.html">🧩Grid ></a>
+            </div>
+        </div>
+    </div>
+    <footer class="container blockquote-footer text-center">
+        <a class="link-light" href="https://github.com/AngelMaldonado">AngelMaldonado - 2022</a>
+    </footer>
 
     <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

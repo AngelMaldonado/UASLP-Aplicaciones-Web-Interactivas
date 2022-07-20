@@ -4,12 +4,9 @@
 *  File : styles.css
 *******************************************/
 
-/* █▀▀ █▀█ █▄░█ ▀█▀ ▄▀█ █ █▄░█ █▀▀ █▀█ █▀
-   █▄▄ █▄█ █░▀█ ░█░ █▀█ █ █░▀█ ██▄ █▀▄ ▄█*/
-
-div {
-    color: var(--bs-white);
-    background-color: var(--bs-teal);
-    border: 1px solid var(--bs-green);
-    padding: 0.75rem;
+.container-sample {
+    background-color: var(--bs-green);
+    border-radius: var(--bs-border-radius);
+    padding: 1rem;
+    margin: 0 auto;
 }
