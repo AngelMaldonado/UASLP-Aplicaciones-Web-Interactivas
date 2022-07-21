@@ -12,126 +12,185 @@
     <meta name="author" content="Angel Maldonado">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <title>Bootstrap - Containers</title>
+    <title>Bootstrap - 🧩Grid</title>
 </head>
 
-<body>
-    <h2>Grid básico</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                1 de 2 (.col)
+<body class="bg-dark text-light">
+    <div class="container my-5 p-5 rounded shadow-lg bg-light bg-opacity-10">
+        <h1>🧩Grid</h1>
+        <p class="lead">
+            El sistema de cuadriculado de <em>Bootstrap</em> utiliza una serie de contenedores, filas, y columnas para
+            distribuir y alinear contenido. Este sistema está construido con <em>flexbox</em> y es completamente
+            <em>responsivo</em>.
+        </p>
+        <h2>Mismo <code>width</code></h2>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row">
+                <div class="col"><code>.col</code></div>
+                <div class="col"><code>.col</code></div>
             </div>
-            <div class="col">
-                2 de 2 (.col)
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                1 de 3 (.col)
-            </div>
-            <div class="col">
-                2 de 3 (.col)
-            </div>
-            <div class="col">
-                3 de 3 (.col)
+            <div class="row">
+                <div class="col"><code>.col</code></div>
+                <div class="col"><code>.col</code></div>
+                <div class="col"><code>.col</code></div>
             </div>
         </div>
-    </div>
-    <br><br>
-    <h2>Grid con anchos de columna</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                1 de 3 (.col)
+        <br>
+        <h2>Estableciendo un <code>width</code> a las columnas</h2>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row">
+                <div class="col"><code>.col</code></div>
+                <div class="col-6"><code>.col-6</code></div>
+                <div class="col"><code>.col</code></div>
             </div>
-            <div class="col-6">
-                2 de 3 (.col-6)
-            </div>
-            <div class="col">
-                3 de 3 (.col)
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                1 de 3 (.col)
-            </div>
-            <div class="col-8">
-                2 de 3 (.col-10)
-            </div>
-            <div class="col">
-                3 de 3 (.col)
+            <div class="row">
+                <div class="col"><code>.col</code></div>
+                <div class="col-5"><code>.col-5</code></div>
+                <div class="col"><code>.col</code></div>
             </div>
         </div>
-    </div>
-    <br><br>
-    <h2>Grid con anchos variables</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                1 de 3 (.col-md-4)
+        <br>
+        <h2>Columnas con <code>width</code> variable</h2>
+        <p class="lead">La propiedad <code>auto</code> hace que el tamaño del contenedor se ajuste al contenido.</p>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row">
+                <div class="col col-lg-2"><code>.col.col-lg-2</code></div>
+                <div class="col-md-auto"><code>.col-md-auto</code></div>
+                <div class="col col-lg-2"><code>.col.col-lg-2</code></div>
             </div>
-            <div class="col-md-4">
-                2 de 3 (.col-md-4
-            </div>
-            <div class="col-md-4">
-                3 de 3 (.col-md-4)
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                1 de 3 (.col)
-            </div>
-            <div class="col-md-auto">
-                2 de 3 (.col-md-auto)
-            </div>
-            <div class="col col-lg-2">
-                3 de 3 (.col .col-lg-2)
+            <div class="row">
+                <div class="col"><code>.col</code></div>
+                <div class="col-md-auto"><code>.col-md-auto</code></div>
+                <div class="col col-lg-2"><code>.col.col-lg-2</code></div>
             </div>
         </div>
-    </div>
-    <br><br>
-    <h2>Grid apilados hasta cierto breakpoint</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8">.col-sm-8</div>
-            <div class="col-sm-4">.col-sm-4</div>
-        </div>
-        <div class="row">
-            <div class="col-sm">.col-sm</div>
-            <div class="col-sm">.col-sm</div>
-            <div class="col-sm">.col-sm</div>
-        </div>
-    </div>
-    <br><br>
-    <h2>Grid con rows anidados</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                .col
+        <br>
+        <h2>Clases responsivas</h2>
+        <p class="lead">
+            Se puede especificar la distribución de las columnas según cada <em>breakpoint</em>.
+        </p>
+        <h3>Todos los <em>breakpoints</em></h3>
+        <p class="lead">
+            Para especificar la misma distribución de las columnas en todos los <em>breakpoints</em>, basta con utilizar
+            la clase <code>.col</code> y <code>.col-*</code> (para anchos variables). <br>
+
+            <b><em>
+                Si la suma de las columnas es mayor a 12, las columnas que sobresalgan del límite se colocarán
+                debajo.
+            </em></b>
+        </p>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row">
+                <div class="col"><code>.col</code></div>
+                <div class="col"><code>.col</code></div>
+                <div class="col"><code>.col</code></div>
+                <div class="col"><code>.col</code></div>
             </div>
-            <div class="col-sm">
-                .col-sm
-                <div class="row">
-                    <div class="col-sm">
-                        .col-sm
-                    </div>
-                    <div class="col-sm">
-                        .col-sm
+            <div class="row">
+                <div class="col-8"><code>.col-8</code></div>
+                <div class="col-4"><code>.col-4</code></div>
+            </div>
+            <div class="row">
+                <div class="col-9"><code>.col-9</code></div>
+                <div class="col-2"><code>.col-2</code></div>
+                <div class="col-3"><code>.col-3</code></div>
+                <div class="col-5"><code>.col-5</code></div>
+            </div>
+        </div>
+        <br>
+        <h3>Apilados hacia alineados</h3>
+        <p class="lead">
+            Para un inicio con las columnas apiladas se usan las clases <code>.col-{breakpoint}-*</code>,
+            esto hará que las columnas cambien su tamaño por el que se especifique cuando llegue al
+            <code>{breakpoint}</code>, pero iniciarán todas de forma apilada antes del <code>{breakpoint}</code>.
+        </p>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row">
+                <div class="col-sm-8"><code>.col-sm-8</code></div>
+                <div class="col-sm-4"><code>.col-sm-4</code></div>
+            </div>
+            <div class="row">
+                <div class="col-sm"><code>.col-sm</code></div>
+                <div class="col-sm"><code>.col-sm</code></div>
+                <div class="col-sm"><code>.col-sm</code></div>
+                <div class="col-sm"><code>.col-sm</code></div>
+            </div>
+        </div>
+        <br>
+        <p class="lead">
+            También se pueden hacer combinaciones de estas clases para conseguir distribuciones particulares.
+        </p>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row">
+                <div class="col-md-8"><code>.col-md-8</code></div>
+                <div class="col-6 col-md-4"><code>.col-6.col-md-4</code></div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4"><code>.col-6.col-md-4</code></div>
+                <div class="col-6 col-md-4"><code>.col-6.col-md-4</code></div>
+                <div class="col-6 col-md-4"><code>.col-6.col-md-4</code></div>
+            </div>
+        </div>
+        <br>
+        <h2>Especificando el número de columnas y sus medidas por fila</h2>
+        <p class="lead">
+            Para evitar crear multiples instancias de la clase <code>.row</code>, se puede especificar en un mismo
+            <code>.row</code> el número de columnas por fila con la clase <code>.row-cols-*</code>. Las clases
+            <code>.col-*</code> seguirán teniendo el mismo comportamiento en sus respectivas filas.
+        </p>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row row-cols-2">
+                <div class="col"><code>.row-cols-2>.col</code></div>
+                <div class="col"><code>.row-cols-2>.col</code></div>
+                <div class="col"><code>.row-cols-2>.col</code></div>
+                <div class="col"><code>.row-cols-2>.col</code></div>
+            </div>
+            <br>
+            <div class="row row-cols-3">
+                <div class="col"><code>.row-cols-3>.col</code></div>
+                <div class="col"><code>.row-cols-3>.col</code></div>
+                <div class="col"><code>.row-cols-3>.col</code></div>
+                <div class="col"><code>.row-cols-3>.col</code></div>
+            </div>
+            <br>
+            <div class="row row-cols-auto">
+                <div class="col"><code>.row-cols-auto>.col</code></div>
+                <div class="col"><code>.row-cols-auto>.col</code></div>
+                <div class="col"><code>.row-cols-auto>.col</code></div>
+                <div class="col"><code>.row-cols-auto>.col</code></div>
+            </div>
+        </div>
+        <br>
+        <h2>Anidamiento</h2>
+        <div class="container d-flex flex-column gap-3">
+            <div class="row">
+                <div class="col-sm-3"><code>.col-sm-3</code></div>
+                <div class="col-sm-9">
+                    <code>.col-sm-9</code>
+                    <div class="row">
+                        <div class="col"><code>.col</code></div>
+                        <div class="col"><code>.col</code></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container text-center mt-5">
+            <div class="btn-group">
+                <a class="btn btn-primary" href="../02Containers/index.html">< 🧩Contenedores</a>
+                <a class="btn btn-primary active" href="#" aria-current="page">🧩Grid</a>
+                <a class="btn btn-primary" href="../04Columns">🧩Columnas ></a>
+            </div>
+        </div>
     </div>
+    <footer class="container blockquote-footer text-center">
+        <a class="link-light" href="https://github.com/AngelMaldonado">AngelMaldonado - 2022</a>
+    </footer>
 
     <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
