@@ -11,213 +11,143 @@
     <meta charset="UTF-8">
     <meta name="author" content="Angel Maldonado">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
 
     <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-    <title>Bootstrap - Containers</title>
+    <title>Bootstrap - 🧩Columnas</title>
 </head>
 
-<body>
-    <h2>Alineamiento vertical</h2>
-    <div class="container vertical">
+<body class="bg-dark text-light">
+    <div class="container my-5 p-5 rounded shadow-lg bg-light bg-opacity-10">
+        <h1>🧩Columnas</h1>
+        <p class="lead">
+            Las columnas son construidas en base al sistema de cuadriculado de <em>flexbox</em>. Por lo que se tiene a
+            disposición las propiedades de <em>CSS - flexbox</em> para distribuir y alinear las columnas que estén
+            dentro del elemento que tenga la clase <code>.row</code>.
+        </p>
+        <h2>Alineamiento vertical</h2>
         <div class="row align-items-start">
-            .row .align-items-start
-            <div class="col">
-                .col
-            </div>
-            <div class="col">
-                .col
-            </div>
-            <div class="col">
-                .col
-            </div>
+            <div class="col"><code>.align-items-start>.col</code></div>
+            <div class="col"><code>.align-items-start>.col</code></div>
+            <div class="col"><code>.align-items-start>.col</code></div>
         </div>
+        <br>
         <div class="row align-items-center">
-            .row .align-items-center
-            <div class="col">
-                .col
-            </div>
-            <div class="col">
-                .col
-            </div>
-            <div class="col">
-                .col
-            </div>
+            <div class="col"><code>.align-items-center>.col</code></div>
+            <div class="col"><code>.align-items-center>.col</code></div>
+            <div class="col"><code>.align-items-center>.col</code></div>
         </div>
+        <br>
         <div class="row align-items-end">
-            .row .align-items-end
-            <div class="col">
-                .col
-            </div>
-            <div class="col">
-                .col
-            </div>
-            <div class="col">
-                .col
-            </div>
+            <div class="col"><code>.align-items-end>.col</code></div>
+            <div class="col"><code>.align-items-end>.col</code></div>
+            <div class="col"><code>.align-items-end>.col</code></div>
         </div>
+        <br>
         <div class="row">
-            <div class="col align-self-start">
-                .col .align-self-start
-            </div>
-            <div class="col align-self-center">
-                .col .align-self-center
-            </div>
-            <div class="col align-self-end">
-                .col .align-self-end
+            <div class="col align-self-start"><code>.col.align-self-start</code></div>
+            <div class="col align-self-center"><code>.col.align-self-center</code></div>
+            <div class="col align-self-end"><code>.col.align-self-end</code></div>
+        </div>
+        <br>
+        <h2>Alineamiento horizontal</h2>
+        <div class="row align-items-center justify-content-start">
+            <div class="col-4"><code>.justify-content-start>.col-4</code></div>
+            <div class="col-4"><code>.justify-content-start>.col-4</code></div>
+        </div>
+        <br>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-4"><code>.justify-content-center>.col-4</code></div>
+            <div class="col-4"><code>.justify-content-center>.col-4</code></div>
+        </div>
+        <br>
+        <div class="row align-items-center justify-content-end">
+            <div class="col-4"><code>.justify-content-end>.col-4</code></div>
+            <div class="col-4"><code>.justify-content-end>.col-4</code></div>
+        </div>
+        <br>
+        <div class="row align-items-center justify-content-around">
+            <div class="col-4"><code>.justify-content-around>.col-4</code></div>
+            <div class="col-4"><code>.justify-content-around>.col-4</code></div>
+        </div>
+        <br>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-4"><code>.justify-content-between>.col-4</code></div>
+            <div class="col-4"><code>.justify-content-between>.col-4</code></div>
+        </div>
+        <br>
+        <div class="row align-items-center justify-content-evenly">
+            <div class="col-4"><code>.justify-content-evenly>.col-4</code></div>
+            <div class="col-4"><code>.justify-content-evenly>.col-4</code></div>
+        </div>
+        <br>
+        <h2>Wrapping</h2>
+        <p class="lead">
+            Si las columnas definidas sobrepasa el límite de <em>Bootstrap</em>, el resto se agregarán en una nueva
+            línea.
+        </p>
+        <div class="row align-items-start">
+            <div class="col-9"><code>.col-9</code></div>
+            <div class="col-4"><code>.col-4</code></div>
+            <div class="col-6"><code>.col-6</code></div>
+        </div>
+        <br>
+        <h2>Breaks de columnas</h2>
+        <p class="lead">
+            Para obligar al sistema de grid de <em>Bootstrap</em> a que cree nuevas filas se puede hacer uso de la
+            utilidad <code>.w-100</code> con un <em>div</em> para que fuerce a las siguientes columnas después de ese
+            <em>div</em> a posicionarse en una nueva fila.
+        </p>
+        <div class="row align-items-start">
+            <div class="col-6 col-sm-3"><code>.col-6.col-sm-3</code></div>
+            <div class="col-6 col-sm-3"><code>.col-6.col-sm-3</code></div>
+            <div class="w-100 h-auto p-0 bg-warning border-0"><code>.w-100</code></div>
+            <div class="col-6 col-sm-3"><code>.col-6.col-sm-3</code></div>
+            <div class="col-6 col-sm-3"><code>.col-6.col-sm-3</code></div>
+        </div>
+        <br>
+        <h2>Reordenamiento</h2>
+        <div class="row align-items-center">
+            <div class="col order-2">Primero en DOM <code>.col.order-2</code></div>
+            <div class="col order-3">Segundo en DOM <code>.col.order-3</code></div>
+            <div class="col order-1">Tercero en DOM <code>.col.order-1</code></div>
+        </div>
+        <br>
+        <h2>Offset en columnas</h2>
+        <div class="row align-items-center">
+            <div class="col-sm-4"><code>.col-sm-4</code></div>
+            <div class="col-sm-4 offset-sm-2"><code>.col-sm-4.offset-sm-2</code></div>
+        </div>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-sm-3 offset-sm-3"><code>.col-sm-3.offset-sm-3</code></div>
+            <div class="col-sm-3 offset-sm-3"><code>.col-sm-3.offset-sm-3</code></div>
+        </div>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-sm-6 offset-sm-3"><code>.col-sm-6.offset-sm-3</code></div>
+        </div>
+        <br>
+        <h2>Columnas fuera de contenedores <code>.row</code></h2>
+        <div class="col-out col-3 p-3"><code>.col-3</code> ancho de 25%</div>
+        <br>
+        <div class="col-out col-sm-6 p-3"><code>.col-sm-6</code> ancho de 75% a partir de sm</div>
+        <div class="container text-center mt-5">
+            <div class="btn-group">
+                <a class="btn btn-primary" href="../03Grid/index.html">< 🧩Grid</a>
+                <a class="btn btn-primary active" href="#" aria-current="page">🧩Columnas</a>
+                <a class="btn btn-primary" href="../05Gutters">🧩Medianiles ></a>
             </div>
         </div>
     </div>
-    <br><br>
-    <h2>Alineamiento horizontal</h2>
-    <div class="container horizontal">
-        <div class="row justify-content-start">
-            <p>.row .justify-content-start</p>
-            <div class="col-2">
-                .col-2
-            </div>
-            <div class="col-2">
-                .col-2
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <p>.row .justify-content-center</p>
-            <div class="col-2">
-                .col-2
-            </div>
-            <div class="col-2">
-                .col-2
-            </div>
-        </div>
-        <div class="row justify-content-end">
-            <p>.row .justify-content-end</p>
-            <div class="col-2">
-                .col-2
-            </div>
-            <div class="col-2">
-                .col-2
-            </div>
-        </div>
-        <div class="row justify-content-around">
-            <p>.row .justify-content-around</p>
-            <div class="col-2">
-                .col-2
-            </div>
-            <div class="col-2">
-                .col-2
-            </div>
-        </div>
-        <div class="row justify-content-between">
-            <p>.row .justify-content-between</p>
-            <div class="col-2">
-                .col-2
-            </div>
-            <div class="col-2">
-                .col-2
-            </div>
-        </div>
-        <div class="row justify-content-evenly">
-            <p>.row .justify-content-evenly</p>
-            <div class="col-2">
-                .col-2
-            </div>
-            <div class="col-2">
-                .col-2
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <h2>Wrapping de columnas</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-9">.col-9</div>
-            <div class="col-4">.col-4</div>
-            <div class="col-6">.col-6</div>
-        </div>
-    </div>
-    <br><br>
-    <h2>Breaks de columnas</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-
-            <!-- Fuerza a las columnas a formar una nueva linea -->
-            <div class="w-100">.w-100</div>
-
-            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-        </div>
-    </div>
-    <br><br>
-    <h2>Reordenamiento de columnas</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col order-2">
-                Primero en DOM, .col .order-2
-            </div>
-            <div class="col order-3">
-                Segundo en DOM, .col .order-3
-            </div>
-            <div class="col order-1">
-                Tercero en DOM, .col .order-1
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <h2>Offset (gap/desplazamiento)</h2>
-    <div class="container">
-        <h3>Con clases de grid:</h3>
-        <div class="row">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
-        </div>
-        <div class="row">
-            <div class="col-5">.col-5</div>
-            <div class="col-5 offset-sm-2 offset-md-0">.col-5 .offset-sm-2 .offset-md-0</div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
-            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6
-                .offset-lg-0</div>
-        </div>
-        <h3>Con margin:</h3>
-        <div class="row">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
-            <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
-        </div>
-        <div class="row">
-            <div class="col-auto me-auto">.col-auto .me-auto</div>
-            <div class="col-auto">.col-auto</div>
-        </div>
-    </div>
-    <br><br>
-    <h2>Clases .column fuera del contenedor .row</h2>
-    <div class="col-3 bg-light p-3 border">
-        .col-3 ancho de 25%
-    </div>
-    <div class="col-sm-6 bg-light p-3 border">
-        .col-sm-6 ancho de 75% a partir de sm
-    </div>
+    <footer class="container blockquote-footer text-center">
+        <a class="link-light" href="https://github.com/AngelMaldonado">AngelMaldonado - 2022</a>
+    </footer>
 
     <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
