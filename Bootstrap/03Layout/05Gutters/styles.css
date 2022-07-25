@@ -3,7 +3,20 @@
 *  Created On : Tue Jul 05 2022
 *  File : styles.css
 *******************************************/
+.container {
+    border-radius: var(--bs-border-radius);
+}
 
-p {
-    margin: 0;
+.row {
+    justify-content: center;
+    background-color: var(--bs-green);
+    border-radius: inherit;
+    text-align: center;
+}
+
+.row > * {
+    color: var(--bs-body-color);
+    background-color: var(--bs-orange);
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-dark);
+    border-radius: inherit;
 }
