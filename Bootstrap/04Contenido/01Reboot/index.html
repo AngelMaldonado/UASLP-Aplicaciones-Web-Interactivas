@@ -1,5 +1,5 @@
 <!-- **************************************
-*   Author : amald
+*   Author : Angel Maldonado
 *   Created On : 12/07/2022
 *   File : index.html
 *************************************** -->
@@ -7,135 +7,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Bootstrap - Reboot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Bootstrap - 📄Reboot</title>
 </head>
-<body style="--bs-body-color: #333;">
-<p>body style="--bs-body-color: #333;" (valor de fondo customizado)</p>
-<h1>Títulos (headings)</h1>
-    <p>p: margin-bottom=1rem ~ h*: margin-bottom=.5rem</p>
-    <p class="bg-dark">p. Bootstrap Párrafo</p>
-    <h1 class="bg-dark">h1. Bootstrap Titulo</h1>
-    <h2 class="bg-dark">h2. Bootstrap Titulo</h2>
-    <h3 class="bg-dark">h3. Bootstrap Titulo</h3>
-    <h4 class="bg-dark">h4. Bootstrap Titulo</h4>
-    <h5 class="bg-dark">h5. Bootstrap Titulo</h5>
-    <h6 class="bg-dark">h6. Bootstrap Titulo</h6>
-<h1>Reglas hr</h1>
-    <div class="text-danger">
-        <hr>
-        <p>div.text-danger p</p>
-    </div>
-    <hr class="text-success border-3 opacity-50">
-    <p class="text-success">text-success border-3 opacity-50</p>
-<h1>Listas</h1>
-    <ul class="bg-dark">
-        ul padding-left: 2rem, margin-bottom: 1rem
-        <li>ul li</li>
-        <li>ul li</li>
-        <ul>
-            <li>ul ul li: Lista anidada (no tiene margen)</li>
-            <li>ul ul li: Lista anidada (no tiene margen)</li>
+<body class="bg-dark text-light">
+    <div class="container my-5 p-5 rounded shadow-lg bg-light bg-opacity-10">
+        <h1>📄Reboot</h1>
+        <p class="lead">
+            El archivo de <em>Reboot</em> se basa en <em>Normalize</em> y modifica la apariencia por defecto de algunas
+            etiquetas <em>HTML</em>.
+        </p>
+        <h2>Headings</h2>
+        <h1 class="reboot-item">h1. Título de Bootstrap</h1>
+        <h2 class="reboot-item">h2. Título de Bootstrap</h2>
+        <h3 class="reboot-item">h3. Título de Bootstrap</h3>
+        <h4 class="reboot-item">h4. Título de Bootstrap</h4>
+        <h5 class="reboot-item">h5. Título de Bootstrap</h5>
+        <h6 class="reboot-item">h6. Título de Bootstrap</h6>
+        <h2>Reglas horizontales</h2>
+        <p class="lead">
+            Las reglas horizontales <code>&lt;br&gt;</code> se estilizan mediante la propiedad <code>border-top</code> y
+            el color lo heredan por <code>color</code> del elemento padre y tienen opacidad de <code>.25</code>.
+        </p>
+        <ul class="list-unstyled">
+            <li>
+                <p><code>&lt;hr&gt;</code></p>
+                <hr>
+            </li>
+            <li>
+                <p><code>&lt;hr class="border-danger"&gt;</code></p>
+                <hr class="border-danger">
+            </li>
+            <li>
+                <p><code>&lt;hr class="border border-1"&gt;</code></p>
+                <hr class="border border-1">
+            </li>
+            <li>
+                <p><code>&lt;hr class=border border-5"&gt;</code></p>
+                <hr class="border border-5">
+            </li>
         </ul>
-        <li>ul li</li>
-        <li>ul li</li>
-    </ul>
-    <ol class="bg-dark">
-        ol
-        <li>ol li</li>
-        <li>ol li</li>
-        <li>ol li</li>
-        <li>ol li</li>
-    </ol>
-    <dl class="bg-dark">
-        <dt>dt - Description Title</dt>
-        <dd>dd - Description Details</dd>
-        <dt>dt - Description Title</dt>
-        <dd>dd - Description Details</dd>
-        <dt>dt - Description Title</dt>
-        <dd>dd - Description Details</dd>
-    </dl>
-<h1>Código como contenido</h1>
-<code>&lt;section&gt;</code>
-<h1>Variables matemáticas var</h1>
-    <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
-<h1>Entradas del usuario kdb</h1>
-    <div class="bg-dark">
-    <kbd>cd</kbd><br><kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
-    </div>
-<h1>Salida de ejemplo etiqueta &lt;samp&gt;</h1>
-    <samp>Esta es una salida de ejemplo dentro de la etiqueta samp</samp>
-<h1>Tablas</h1>
-    <table class="bg-dark border">
-        <thead>
-            <tr>
-                <th>Titulo col1</th>
-                <th>Titulo col2</th>
-                <th>Titulo col3</th>
-                <th>Titulo col4</th>
+        <h2>Listas</h2>
+        <p><code>ul>li</code></p>
+        <ul class="reboot-item">
+            <li class="reboot-item">Elemento #1</li>
+            <li class="reboot-item">Elemento #2</li>
+            <li class="reboot-item">Elemento #3</li>
+            <li class="reboot-item">Elemento #4</li>
+        </ul>
+        <p><code>ol>li</code></p>
+        <ol class="reboot-item">
+            <li class="reboot-item">Elemento #1</li>
+            <li class="reboot-item">Elemento #2</li>
+            <li class="reboot-item">Elemento #3</li>
+            <li class="reboot-item">Elemento #4</li>
+        </ol>
+        <p><code>dl>dt, dl>dt</code></p>
+        <dl class="reboot-item">
+            <dt class="reboot-item">Título descripción #1</dt>
+            <dd class="reboot-item">Descripción #1</dd>
+            <dt class="reboot-item">Título descripción #2</dt>
+            <dd class="reboot-item">Descripción #2</dd>
+            <dt class="reboot-item">Título descripción #3</dt>
+            <dd class="reboot-item">Descripción #3</dd>
+            <dt class="reboot-item">Título descripción #4</dt>
+            <dd class="reboot-item">Descripción #4</dd>
+        </dl>
+        <h2>Código fuente (<em>inline</em> y <em>bloque</em>)</h2>
+        <p class="lead">
+            Para mostrar código fuente es con la etiqueta <code>&lt;code&gt;</code>:<br>
+            <code>let i = 10;</code>, <code>&lt;section&gt;</code>, <code>$var = 'Hola';</code>
+        </p>
+        <h2>Variables</h2>
+        <p class="lead">
+            Para mostrar variables matemáticas es con la etiqueta <code>&lt;var&gt;</code>:<br>
+            <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+        </p>
+        <h2>Entradas de usuario</h2>
+        <p class="lead">
+            Para mostrar entradas del usuario se utiliza la etiqueta <code>&lt;kbd&gt;</code>:<br>
+            <kbd>ctrl + ,</kbd>, <kbd>ctrl + c</kbd>, <kbd>ctrl + v</kbd>
+        </p>
+        <h2>Ejemplos de salida</h2>
+        <p class="lead">
+            Se utiliza la etiqueta <code>&lt;samp&gt;</code>:<br>
+            <samp>Este debe ser un ejemplo de salida de la computadora</samp>
+        </p>
+        <h2>Tablas</h2>
+        <table class="reboot-item">
+            <caption class="reboot-item">
+                This is an example table, and this is its caption to describe the contents.
+            </caption>
+            <thead>
+            <tr class="reboot-item">
+                <th class="reboot-item">Heading de tabla</th>
+                <th class="reboot-item">Heading de tabla</th>
+                <th class="reboot-item">Heading de tabla</th>
+                <th class="reboot-item">Heading de tabla</th>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>R1Col1</td>
-                <td>R1Col2</td>
-                <td>R1Col3</td>
-                <td>R1Col4</td>
+            </thead>
+            <tbody>
+            <tr class="reboot-item">
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
             </tr>
-            <tr>
-                <td>R2Col1</td>
-                <td>R2Col2</td>
-                <td>R2Col3</td>
-                <td>R2Col4</td>
+            <tr class="reboot-item">
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
             </tr>
-            <tr>
-                <td>R3Col1</td>
-                <td>R3Col2</td>
-                <td>R3Col3</td>
-                <td>R3Col4</td>
+            <tr class="reboot-item">
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
+                <td class="reboot-item">Casilla de tabla</td>
             </tr>
-        </tbody>
-        <caption class="bg-light">Tabla de ejemplo</caption>
-    </table>
-<h1>Formularios</h1>
-    <form class="bd-example">
-        <fieldset>
+            </tbody>
+        </table>
+        <h2>Formularios</h2>
+        <fieldset class="reboot-item">
             <legend>Example legend</legend>
             <p>
                 <label for="input">Example input</label>
-                <input type="text" id="input" placeholder="Example input">
+                <input id="input" placeholder="Example input" type="text">
             </p>
             <p>
                 <label for="email">Example email</label>
-                <input type="email" id="email" placeholder="test@example.com">
+                <input id="email" placeholder="test@example.com" type="email">
             </p>
             <p>
                 <label for="tel">Example telephone</label>
-                <input type="tel" id="tel">
+                <input id="tel" type="tel">
             </p>
             <p>
                 <label for="url">Example url</label>
-                <input type="url" id="url">
+                <input id="url" type="url">
             </p>
             <p>
                 <label for="number">Example number</label>
-                <input type="number" id="number">
+                <input id="number" type="number">
             </p>
             <p>
                 <label for="search">Example search</label>
-                <input type="search" id="search">
+                <input id="search" type="search">
             </p>
             <p>
                 <label for="range">Example range</label>
-                <input type="range" id="range" min="0" max="10">
+                <input id="range" max="10" min="0" type="range">
             </p>
             <p>
                 <label for="file">Example file input</label>
-                <input type="file" id="file">
+                <input id="file" type="file">
             </p>
             <p>
                 <label for="select">Example select</label>
@@ -161,15 +190,16 @@
             </p>
             <p>
                 <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                    <input checked="" id="optionsRadios1" name="optionsRadios" type="radio" value="option1">
                     Option one is this and that
                 </label>
                 <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Option two is something else that's also super long to demonstrate the wrapping of these fancy form controls.
+                    <input id="optionsRadios2" name="optionsRadios" type="radio" value="option2">
+                    Option two is something else that's also super long to demonstrate the wrapping of these fancy form
+                    controls.
                 </label>
                 <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                    <input disabled="" id="optionsRadios3" name="optionsRadios" type="radio" value="option3">
                     Option three is disabled
                 </label>
             </p>
@@ -179,35 +209,35 @@
             </p>
             <p>
                 <label for="date">Example date</label>
-                <input type="date" id="date">
+                <input id="date" type="date">
             </p>
             <p>
                 <label for="time">Example time</label>
-                <input type="time" id="time">
+                <input id="time" type="time">
             </p>
             <p>
                 <label for="password">Example password</label>
-                <input type="password" id="password">
+                <input id="password" type="password">
             </p>
             <p>
                 <label for="datetime-local">Example datetime-local</label>
-                <input type="datetime-local" id="datetime-local">
+                <input id="datetime-local" type="datetime-local">
             </p>
             <p>
                 <label for="week">Example week</label>
-                <input type="week" id="week">
+                <input id="week" type="week">
             </p>
             <p>
                 <label for="month">Example month</label>
-                <input type="month" id="month">
+                <input id="month" type="month">
             </p>
             <p>
                 <label for="color">Example color</label>
-                <img style="min-width:16px;min-height:16px;box-sizing:unset;box-shadow:none;background:unset;padding:0 6px 0 0;cursor:pointer;" src="chrome-extension://ohcpnigalekghcmgcdcenkpelffpdolg/img/icon16.png" title="Select with ColorPick Eyedropper - See advanced option: &quot;Add ColorPick Eyedropper near input[type=color] fields on websites&quot;" class="colorpick-eyedropper-input-trigger" alt="imagen"><input type="color" id="color">
+                <input id="color" type="color">
             </p>
             <p>
                 <label for="output">Example output</label>
-                <output name="result" id="output">100</output>
+                <output id="output" name="result">100</output>
             </p>
             <p>
                 <button type="submit">Button submit</button>
@@ -216,46 +246,56 @@
                 <input type="button" value="Input button">
             </p>
             <p>
-                <button type="submit" disabled="">Button submit</button>
-                <input type="submit" value="Input submit button" disabled="">
-                <input type="reset" value="Input reset button" disabled="">
-                <input type="button" value="Input button" disabled="">
+                <button disabled="" type="submit">Button submit</button>
+                <input disabled="" type="submit" value="Input submit button">
+                <input disabled="" type="reset" value="Input reset button">
+                <input disabled="" type="button" value="Input button">
             </p>
         </fieldset>
-    </form>
-<h1>Direcciones (&lt;address&gt;)</h1>
-    <address>
-        <strong>Twitter, Inc.</strong><br>
-        1355 Market St, Suite 900<br>
-        San Francisco, CA 94103<br>
-        <abbr title="Phone">P:</abbr> (123) 456-7890
-    </address>
-    <address>
-        <strong>Full Name</strong><br>
-        <a href="mailto:first.last@example.com">first.last@example.com</a>
-    </address>
-<h1>Blockquote</h1>
-    <blockquote class="blockquote">
-        <p>A well-known quote, contained in a blockquote element.</p>
-    </blockquote>
-    <p>Someone famous in <cite title="Source Title">Source Title</cite></p>
-<h1>Summary</h1>
-    <details>
-        <summary>Some details</summary>
-        <p>More info about the details.</p>
-    </details>
-    <details>
-        <summary>Some details</summary>
-        <p>More info about the details.</p>
-    </details>
-<h1>Input [hidden]</h1>
-    <p>Los inputs pueden tener un atributo nuevo "hidden" para evitar especificar type="hidden"</p>
-    <label for="hidden">Aquí hay un input con atributo hidden!</label>
-    <input type="text" id="hidden" hidden>
+        <h2>Botones por atributo <code>role</code></h2>
+        <p class="lead">
+            Se puede establecer cualquier elemento para que tenga el cursor de <code>pointer</code>,
+            utilizando el atributo <code>role="button"</code>:<br>
+            <span class="reboot-item" role="button"><code>&lt;span&gt;</code> con <code>role="button"</code></span>
+        </p>
+        <h2>Elementos varios</h2>
+        <h3>Direcciones <code>&lt;address&gt;</code></h3>
+        <address class="reboot-item">
+            <strong>Twitter, Inc.</strong><br>
+            1355 Market St, Suite 900<br>
+            San Francisco, CA 94103<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+        <address class="reboot-item">
+            <strong>Full Name</strong><br>
+            <a href="mailto:first.last@example.com">first.last@example.com</a>
+        </address>
+        <h3>Bloque de citas <code>&lt;blockquote&gt; - &lt;cite&gt;</code></h3>
+        <blockquote class="reboot-item">
+            <p>Párrafo contenido en un blockquote.</p>
+        </blockquote>
+        <cite class="reboot-item" title="Source Title">Título de la fuente</cite>
+        <h3>Abreviaciones <code>&lt;abbr&gt;</code></h3>
+        <abbr class="reboot-item" title="HyperText Markup Language">HTML</abbr>
+        <h3>Más información <code>&lt;summary&gt;</code></h3>
+        <details class="reboot-item">
+            <summary>Algunos detalles</summary>
+            <p>Más información detallada</p>
+        </details>
+        <h3>Atributo <code>[hidden]</code></h3>
+        <p class="lead">Se puede agregar el atributo <code>hidden</code> para ocultar cualquier elemento en
+            <em>HTML</em>.</p>
 
-<!-- Bootstrap js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        <div class="container text-center mt-5">
+            <div class="btn-group">
+                <a class="btn btn-primary" href="../../03Layout/05Gutters/index.html">< 🧩Medianiles</a>
+                <a aria-current="page" class="btn btn-primary active" href="#">📄Reboot</a>
+                <a class="btn btn-primary" href="../02Typography">📄Tipografía ></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

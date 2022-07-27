@@ -1,4 +1,9 @@
-body {
-    background-color: var(--bs-body-color);
-    color: var(--bs-white);
+.reboot-item {
+    background-color: rgba(var(--bs-danger-rgb), 0.3);
+    border: var(--bs-border-width) var(--bs-border-style) rgba(var(--bs-danger-rgb), 0.8);
+    border-radius: var(--bs-border-radius);
+}
+
+.reboot-item code {
+    color: inherit;
 }
