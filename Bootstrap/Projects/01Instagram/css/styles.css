@@ -1,0 +1,9 @@
+.nav-link svg {
+    width: 2rem;
+}
+
+@media (min-width: 768px) {
+    .navbar [role="search"] {
+        margin-left: calc(50% - 18rem);
+    }
+}
