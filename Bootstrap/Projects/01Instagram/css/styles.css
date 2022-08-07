@@ -2,27 +2,15 @@
     width: 2rem;
 }
 
-@media (min-width: 992px) {
-    .navbar .container-lg {
-        width: 1024px;
-        margin: 0;
-        gap: 15rem;
-    }
-
-    .navbar form {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.flex-equal {
+    flex: 1 1 0;
 }
 
-@media (max-width: 576px) {
-    .navbar form {
-        display: none;
-    }
+.navbar .container-fluid {
+    max-width: 1024px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575.98px) {
     .navbar .navbar-nav {
         width: max-content;
     }
@@ -50,6 +38,14 @@
     .navbar .nav-item:nth-of-type(6) .nav-link::after {
         content: "Profile";
     }
+}
+
+body > .container-fluid {
+    max-width: 51rem;
+}
+
+.feed {
+    max-width: 34rem;
 }
 
 /* Stories bar */
